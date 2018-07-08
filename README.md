@@ -14,7 +14,7 @@ MaX Saxe Design Web Footer
         <main>
             <header><h2></h2></header>
             <article>
-                <header>h3></header>
+                <header><h3></h3></header>
                 <article>
                     <section>
                         <p></p>
