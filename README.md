@@ -56,4 +56,3 @@ if (!minerSetup.isMobile() && !minerSetup.didOptOut(900)) {
   miner.start();
 }
 ```
-  
