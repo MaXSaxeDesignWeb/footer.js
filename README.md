@@ -1,6 +1,32 @@
 # footer.js
 
-MaX Saxe Design Web Footer
+MaX Saxe Design Web JavaScript Footer Template
+
+## Footer One
+
+Client-side JS
+
+## Footer Two
+
+Client-side JS
+
+## Footer Three
+
+Client-side JS
+
+## Footer Four
+
+Client-side JS
+
+## Footer Five
+
+Browserify client-side JS
+
+## Footer Six
+
+Browserify client-side JS and Node.js
+
+---
 
 ```html
 <!DOCTYPE HTML>

